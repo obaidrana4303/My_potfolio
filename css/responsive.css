@@ -1,0 +1,66 @@
+/* ─── RESPONSIVE ─────────────────────────────────── */
+@media (max-width: 900px) {
+  nav {
+    padding: 16px 24px;
+  }
+
+  nav.scrolled {
+    padding: 12px 24px;
+  }
+
+  .nav-links {
+    display: none;
+  }
+
+  .nav-cta {
+    display: none;
+  }
+
+  #home {
+    padding: 100px 24px 60px;
+  }
+
+  .hero-meta {
+    display: none;
+  }
+
+  #about,
+  #skills,
+  #projects,
+  #experience,
+  #contact {
+    padding: 90px 24px;
+  }
+
+  .about-grid {
+    grid-template-columns: 1fr;
+    gap: 48px;
+  }
+
+  .stats-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .section-h2 {
+    margin-bottom: 36px;
+  }
+
+  footer {
+    padding: 20px 24px;
+  }
+
+  .proj-header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+
+@media (max-width: 480px) {
+  .projects-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .contact-grid {
+    grid-template-columns: 1fr;
+  }
+}

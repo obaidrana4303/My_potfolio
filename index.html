@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Obaid Ur Rehman — CS student at FAST NUCES, specializing in AI/ML, full-stack web development, and mobile apps. View projects, skills, and experience." />
+  <meta name="author" content="Obaid Ur Rehman" />
+  <meta name="keywords" content="Obaid Ur Rehman, portfolio, CS, AI, ML, Flutter, React, FAST NUCES, developer" />
+  <title>Obaid Ur Rehman — CS Portfolio</title>
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400&family=Syne:wght@400;600;700;800&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,400&display=swap"
+    rel="stylesheet" />
+
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="css/tokens.css" />
+  <link rel="stylesheet" href="css/reset.css" />
+  <link rel="stylesheet" href="css/animations.css" />
+  <link rel="stylesheet" href="css/components.css" />
+  <link rel="stylesheet" href="css/sections.css" />
+  <link rel="stylesheet" href="css/responsive.css" />
+</head>
+
+<body>
+
+  <!-- ═══════ LOADER ═══════════════════════════════ -->
+  <div id="loader">
+    <div class="loader-name" aria-hidden="true">
+      <span>O</span><span>B</span><span>A</span><span>I</span><span>D</span>
+    </div>
+    <div class="loader-bar"></div>
+  </div>
+
+  <!-- ═══════ OVERLAYS ══════════════════════════════ -->
+  <div class="noise"></div>
+  <div class="grid-bg"></div>
+
+  <!-- ═══════ SCROLL PROGRESS ══════════════════════ -->
+  <div id="progress"></div>
+
+  <!-- ═══════ CURSOR ════════════════════════════════ -->
+  <div class="cursor" id="cursor"></div>
+  <div class="cursor-ring" id="ring"></div>
+
+  <!-- ═══════ NAV ═══════════════════════════════════ -->
+  <nav id="navbar">
+    <div class="nav-logo" onclick="navScrollTo('home')">
+      <span class="tag">OUR</span>
+      <span class="path">obaid@portfolio:~$</span>
+    </div>
+    <div class="nav-links">
+      <button onclick="navScrollTo('home')" class="active" id="nav-home">Home</button>
+      <button onclick="navScrollTo('about')" id="nav-about">About</button>
+      <button onclick="navScrollTo('skills')" id="nav-skills">Skills</button>
+      <button onclick="navScrollTo('projects')" id="nav-projects">Projects</button>
+      <button onclick="navScrollTo('experience')" id="nav-experience">Experience</button>
+      <button onclick="navScrollTo('contact')" id="nav-contact">Contact</button>
+    </div>
+    <button class="nav-cta" onclick="navScrollTo('contact')">Hire Me →</button>
+  </nav>
+
+  <!-- ═══════ HERO ═══════════════════════════════════ -->
+  <section id="home">
+    <canvas id="three-canvas"></canvas>
+
+    <div class="hero-content" id="heroContent">
+      <div class="status-badge" id="hero-badge">
+        <span class="status-dot"></span>
+        Available for Opportunities · FAST NUCES '26
+      </div>
+
+      <h1 class="hero-name">
+        <span class="hero-name-line">
+          <span class="glitch-wrap">
+            <span id="hero-first">OBAID</span>
+            <span class="g1">OBAID</span>
+            <span class="g2">OBAID</span>
+          </span>
+        </span>
+        <span class="hero-name-line">
+          <span class="name-dim" id="hero-last">UR REHMAN</span>
+        </span>
+      </h1>
+
+      <div class="hero-role" id="hero-role">
+        I am a <span id="typed" style="color:var(--accent)"></span><span class="typed-cursor"></span>
+      </div>
+
+      <p class="hero-desc" id="hero-desc">
+        Building at the intersection of <strong style="color:var(--accent)">AI</strong>,
+        <strong style="color:var(--accent2)">web</strong>, and
+        <strong style="color:var(--accent3)">mobile</strong> — and everything in between.
+        CS student at FAST NUCES, passionate about real-world problem solving.
+      </p>
+
+      <div class="hero-cta" id="hero-cta">
+        <button class="btn-primary magnetic" onclick="navScrollTo('projects')">View Projects →</button>
+        <a class="btn-outline magnetic" href="https://github.com/obaidrana4303" target="_blank"
+          rel="noopener">GitHub ↗</a>
+      </div>
+
+      <div class="scroll-hint" id="scroll-hint">
+        <span>scroll down</span>
+        <div class="scroll-line"></div>
+      </div>
+    </div>
+
+    <div class="hero-meta" id="hero-meta">
+      <div>FAST NUCES</div>
+      <div>BSCS · 2022–2026</div>
+      <div>GPA: 3.14</div>
+      <div style="color:var(--accent);margin-top:6px">Bahawalpur, PK</div>
+    </div>
+  </section>
+
+  <!-- ═══════ ABOUT ════════════════════════════════ -->
+  <section id="about">
+    <div class="section-label" id="lbl-about"><span class="line"></span>01. About Me</div>
+    <div class="about-grid">
+      <div class="about-left" id="about-left">
+        <h2 class="about-heading">
+          Building things that <span class="grad-text">matter</span>
+        </h2>
+        <p class="about-desc">I'm a motivated CS student at <strong>FAST NUCES</strong> with a strong passion for
+          <strong>Artificial Intelligence</strong> and real-world problem solving.
+        </p>
+        <p class="about-desc">From writing my first <span
+            style="color:var(--accent);font-family:var(--font-mono)">Hello World</span> in C++
+          to training Vision Transformers and shipping full-stack applications — I thrive across the entire CS spectrum.
+        </p>
+        <p class="about-desc">I believe in learning by building. Every project is an adventure into a new domain.</p>
+        <div class="code-block">
+          <div class="code-top"></div>
+          <div class="code-dots">
+            <div class="code-dot" style="background:#f72585"></div>
+            <div class="code-dot" style="background:#ffd60a"></div>
+            <div class="code-dot" style="background:#06d6a0"></div>
+          </div>
+          <div class="cm">// obaid.config.ts</div>
+          <div><span class="kw">const</span> <span class="fn">me</span>: <span class="fn">Developer</span> = {</div>
+          <div style="padding-left:20px"><span class="prop">location</span>: <span class="str">"Bahawalpur,
+              Pakistan"</span>,</div>
+          <div style="padding-left:20px"><span class="prop">university</span>: <span class="str">"FAST NUCES"</span>,
+          </div>
+          <div style="padding-left:20px"><span class="prop">passion</span>: [<span class="str">"AI"</span>, <span
+              class="str">"Web"</span>, <span class="str">"Mobile"</span>],</div>
+          <div style="padding-left:20px"><span class="prop">open_to_work</span>: <span class="bool">true</span>,</div>
+          <div style="padding-left:20px"><span class="prop">gpa</span>: <span class="num">3.14</span>,</div>
+          <div>}</div>
+        </div>
+      </div>
+      <div class="about-right" id="about-right">
+        <div class="stats-grid">
+          <div class="stat-card" style="--c:#00f5d4" data-tilt>
+            <div class="stat-num" style="color:var(--accent)" data-count="15" data-suffix="+">0</div>
+            <div class="stat-label">PROJECTS BUILT</div>
+          </div>
+          <div class="stat-card" data-tilt>
+            <div class="stat-num" style="color:var(--accent2)">3.14</div>
+            <div class="stat-label">GPA</div>
+          </div>
+          <div class="stat-card" data-tilt>
+            <div class="stat-num" style="color:var(--accent3)" data-count="20" data-suffix="+">0</div>
+            <div class="stat-label">TECH STACKS</div>
+          </div>
+          <div class="stat-card" data-tilt>
+            <div class="stat-num" style="color:var(--yellow)" data-count="4" data-suffix="+">0</div>
+            <div class="stat-label">YEARS CODING</div>
+          </div>
+        </div>
+        <div class="edu-card">
+          <div class="edu-bar"></div>
+          <div class="edu-tag">// EDUCATION</div>
+          <div class="edu-item">
+            <div style="display:flex;justify-content:space-between;align-items:flex-start">
+              <div>
+                <div class="edu-name">FAST NUCES</div>
+                <div class="edu-deg">BS Computer Science</div>
+              </div>
+              <div style="text-align:right">
+                <div class="edu-year">2022–2026</div>
+                <div class="edu-gpa">GPA 3.14</div>
+              </div>
+            </div>
+          </div>
+          <div class="edu-item">
+            <div style="display:flex;justify-content:space-between;align-items:flex-start">
+              <div>
+                <div class="edu-name">FG Inter College BWP</div>
+                <div class="edu-deg">Intermediate in CS</div>
+              </div>
+              <div style="text-align:right">
+                <div class="edu-year">2020–2022</div>
+                <div class="edu-gpa">Grade A</div>
+              </div>
+            </div>
+          </div>
+          <div class="edu-item">
+            <div style="display:flex;justify-content:space-between;align-items:flex-start">
+              <div>
+                <div class="edu-name">Army Public School</div>
+                <div class="edu-deg">Matriculation in CS</div>
+              </div>
+              <div style="text-align:right">
+                <div class="edu-year">2018–2020</div>
+                <div class="edu-gpa">Grade A</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════ SKILLS ════════════════════════════════ -->
+  <section id="skills">
+    <div class="inner">
+      <div class="section-label" id="lbl-skills"><span class="line"></span>02. Skills &amp; Stack</div>
+      <h2 class="section-h2" id="h2-skills">My <span class="grad-text">Tech</span> Arsenal</h2>
+      <div class="skills-grid" id="skills-grid"></div>
+    </div>
+  </section>
+
+  <!-- ═══════ PROJECTS ══════════════════════════════ -->
+  <section id="projects">
+    <div class="inner">
+      <div class="section-label" id="lbl-projects"><span class="line"></span>03. Projects</div>
+      <div class="proj-header">
+        <h2 class="section-h2" id="h2-projects" style="margin-bottom:0">What I've <span class="grad-text">Built</span>
+        </h2>
+        <div class="filters" id="filters"></div>
+      </div>
+      <div class="projects-grid" id="projects-grid"></div>
+      <div class="all-projects">
+        <a href="https://github.com/obaidrana4303" target="_blank" class="ghost-btn magnetic">
+          View all on GitHub ↗
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════ EXPERIENCE ════════════════════════════ -->
+  <section id="experience">
+    <div class="inner">
+      <div class="section-label" id="lbl-exp"><span class="line"></span>04. Experience</div>
+      <h2 class="section-h2" id="h2-exp">Where I've <span class="grad-text">Worked</span></h2>
+      <div class="timeline">
+        <div class="timeline-line"></div>
+        <div id="exp-items"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════ CONTACT ════════════════════════════════ -->
+  <section id="contact">
+    <div class="inner">
+      <div class="section-label" id="lbl-contact"><span class="line"></span>05. Contact</div>
+      <h2 class="contact-tagline" id="contact-tagline">
+        Let's build<br><span class="grad-text">something</span><br>together.
+      </h2>
+      <p class="contact-intro" id="contact-intro">
+        Open to internships, freelance work, research collaborations, and exciting opportunities. Don't hesitate to
+        reach out!
+      </p>
+      <div class="contact-grid" id="contact-grid"></div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="footer-text"><span>obaid@portfolio</span>:~$ Built with Three.js · GSAP-style animations</div>
+    <div class="footer-text">© 2025 Obaid Ur Rehman · FAST NUCES '26</div>
+  </footer>
+
+  <!-- ═══════ SCRIPTS ═══════════════════════════════ -->
+  <!-- Three.js CDN -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+
+  <!-- App scripts (load order matters) -->
+  <script src="js/data.js"></script>
+  <script src="js/utils.js"></script>
+  <script src="js/three-scene.js"></script>
+  <script src="js/cursor.js"></script>
+  <script src="js/navigation.js"></script>
+  <script src="js/hero.js"></script>
+  <script src="js/sections.js"></script>
+</body>
+
+</html>
