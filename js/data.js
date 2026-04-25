@@ -78,6 +78,16 @@ const PROJECTS = [
     desc: "Freelance-commissioned space shooter arcade game built in C++. Players pilot a ship dodging and destroying incoming enemies across escalating waves, demonstrating real-time input handling, collision detection, and dynamic difficulty scaling in a console environment.",
     tech: ["C++", "Real-Time Input", "Collision Detection", "Console", "Game Loop"], link: "https://github.com/obaidrana4303", type: "github"
   },
+  {
+    id: 14, title: "Custom DDPM Image Synthesis", sub: "Diffusion Model for High-Quality Generation", cat: "AI / NLP", tag: "Deep Learning", color: "#c77dff", icon: "🎨",
+    desc: "Designed and trained a custom Denoising Diffusion Probabilistic Model (DDPM) with a U-Net backbone for high-resolution image generation, reverse denoising, and target image reconstruction. Optimized with mixed precision training and evaluated using PSNR & SSIM metrics. Deployed via Gradio/Streamlit for interactive inference.",
+    tech: ["Python", "PyTorch", "U-Net", "DDPM", "Gradio", "Streamlit"], link: "https://github.com/obaidrana4303", type: "github"
+  },
+  {
+    id: 15, title: "Martin Dow Field Force Tracker", sub: "Real-Time Location & Reporting System", cat: "Mobile / Cloud", tag: "Android", color: "#2ec4b6", icon: "📍",
+    desc: "Full-stack real-time GPS tracking and field reporting system built for Martin Dow Group to monitor pharmaceutical sales reps. Features an Android app with foreground GPS service, offline Room caching & auto-sync, a Python Flask RESTful backend with SQLite, and a PIN-protected web dashboard displaying live positions on Google Maps with auto-refreshing cards and daily objective summaries.",
+    tech: ["Java", "Android SDK", "Python", "Flask", "SQLite", "Google Maps API"], link: "https://github.com/obaidrana4303/-Martin-Dow-Real-Time-Field-Force-Tracker", type: "github"
+  },
 ];
 
 const EXP = [
